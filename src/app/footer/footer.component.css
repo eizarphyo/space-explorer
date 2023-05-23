@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0.2);
+    height: 25vh;
+    position: relative;
+    bottom: 0;
+}
+
+.container {
+
+}
+

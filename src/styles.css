@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+/* @font-face {
+    font-family: al;
+    src: url(assets/fonts/Alkatra-VariableFont_wght.ttf);
+} */
+
+@font-face {
+    font-family: Heebo;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    font-family: Heebo;
+}
+
+main {
+    margin-top: 10vh;
+}
+
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

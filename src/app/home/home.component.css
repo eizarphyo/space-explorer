@@ -1,0 +1,106 @@
+
+/* 426 */
+@media screen and (max-width: 728px) { 
+   .card {
+    width: 70%;
+   } 
+
+   .card img {
+    width: 50%;
+   }
+
+}
+
+@media screen and (min-width: 728px) and (max-width: 975px) {
+    .card {
+        width: 35%;
+       } 
+    
+       .card img {
+        width: 50%;
+       }
+
+}
+
+
+
+@media screen and (min-width: 975px) {
+    .card {
+     width: 19%;
+    } 
+ 
+    .card img {
+     width: 50%;
+    }
+
+ }
+
+.card-container {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+
+.card {
+    padding: 10px;
+    margin: 0 10px 50px 10px;
+    /* margin-top: 10px; */
+    border: 2px solid #999;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.4);
+    background-color: rgba(85, 85, 85, 0.1);
+    
+}
+
+.card:hover {
+    transform: scale(1.02);
+    /* cursor: pointer; */
+    border-color: #333;   
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.4);
+}
+
+.card .planet-img {
+    border: 1.5px dashed #000;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.card img {
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+.descript {
+    padding: 5px;
+    text-align: center;
+}
+
+.descript h3 {
+    font-weight: 500;
+    margin-top: 0.3em;
+    color: #fff;
+    border-radius: 3px;
+    background-color: rgba(34, 34, 34, 0.9);
+    box-shadow: 0 4px 4px rgba(0, 0, 0,0.4);
+}
+
+.read-more {
+    font-size: 24px;
+    width: 20%;
+    text-align: center;
+    float: right;
+    border-radius: 3px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.read-more:hover {
+    cursor: pointer;
+    border-color: #333;
+    transform: scale(1.09);
+}
+

@@ -1,0 +1,103 @@
+<main>
+  <!-- <div class="container"> -->
+  <div class="contents container">
+    <div class="main-content">
+      <img src="{{ img }}" alt="" />
+      <div class="padding">
+        <h3>{{ name | titlecase }}</h3>
+        <ng-container
+          ><span class="type">{{ type | titlecase }}</span></ng-container
+        >
+        <p>{{ description }}</p>
+      </div>
+    </div>
+
+    <div class="sub-content padding">
+      <div class="time">
+        <h4>
+          Time on <ng-container *ngIf="isSun">the </ng-container>
+          {{ name | titlecase }}
+        </h4>
+        <p>{{ time }}</p>
+      </div>
+
+      <div class="atmosphere">
+        <h4>The Atmosphere</h4>
+        <p>{{ atmosphere }}</p>
+      </div>
+
+      <div class="moons">
+        <h4>
+          Does <ng-container *ngIf="isSun">the </ng-container>
+          {{ name | titlecase }} have any moons?
+        </h4>
+        <p>{{ moons }}</p>
+      </div>
+
+      <div class="rings">
+        <h4>
+          Does <ng-container *ngIf="isSun">the </ng-container>
+          {{ name | titlecase }} have any rings?
+        </h4>
+        <p>{{ rings }}</p>
+      </div>
+
+      <div class="neighbors">
+        <h4>
+          <ng-container *ngIf="isSun">The </ng-container
+          >{{ name | titlecase }}'s Neighbors
+        </h4>
+        <p>{{ neighbors }}</p>
+      </div>
+
+      <div class="namesake">
+        <h4>Namesake</h4>
+        <p>{{ namesake }}</p>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+</main>
+<footer>
+  <div class="container flex">
+    <div class="read-more">
+      <h4>
+        Want to know more about <ng-container *ngIf="isSun">the </ng-container>
+        {{ name | titlecase }}?
+      </h4>
+      <p>
+        Read more here:
+        <a
+          href="https://solarsystem.nasa.gov/planets/{{ name }}/in-depth/"
+          target="_blank"
+          >solarsystem.nasa.gov</a
+        >
+      </p>
+    </div>
+
+    <div class="recommendation">
+      <h4>If you are interested, be sure to check these out!</h4>
+
+      <a
+        href="https://exoplanets.nasa.gov/alien-worlds/exoplanet-travel-bureau/"
+        target="_blank"
+      >
+        Explore Alien Worlds (Exoplanets)
+      </a>
+
+      <a href="https://spaceplace.nasa.gov/" target="_blank">
+        NASA Space Place
+      </a>
+
+      <a href="https://solarsystem.nasa.gov/" target="_blank"> Solar System </a>
+
+      <a href="https://universe.nasa.gov/" target="_blank">
+        Explore The Universe
+      </a>
+
+      <a href="https://climate.nasa.gov/" target="_blank">
+        NASA Climate Change
+      </a>
+    </div>
+  </div>
+</footer>
